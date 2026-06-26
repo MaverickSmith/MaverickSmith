@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Maverick E. Smith | Memory, Aging, and Vision [MAV] Lab</title>
+<title>Maverick E. Smith | Memory, Aging, and Vision (MAV) Lab</title>
 
 <style>
 :root{
@@ -21,7 +21,7 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     line-height:1.6;
     color:var(--dark);
 }
@@ -58,10 +58,6 @@ nav ul{
     flex-wrap:wrap;
 }
 
-nav li{
-    margin:0;
-}
-
 nav a{
     display:block;
     padding:15px 20px;
@@ -93,22 +89,23 @@ h2{
 
 .hero-grid{
     display:grid;
-    grid-template-columns:1fr 2fr;
+    grid-template-columns:300px 1fr;
     gap:40px;
     align-items:center;
 }
 
-.profile-placeholder{
-    width:100%;
-    max-width:250px;
-    aspect-ratio:1;
-    border-radius:50%;
-    background:#ddd;
+.profile-photo{
     display:flex;
-    align-items:center;
     justify-content:center;
-    font-size:1.2rem;
-    color:#666;
+}
+
+.profile-photo img{
+    width:280px;
+    height:280px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid white;
+    box-shadow:0 8px 20px rgba(0,0,0,.20);
 }
 
 .card-grid{
@@ -157,18 +154,26 @@ footer{
 }
 
 @media(max-width:700px){
+
     .hero-grid{
         grid-template-columns:1fr;
         text-align:center;
     }
 
-    .profile-placeholder{
-        margin:auto;
+    .profile-photo{
+        justify-content:center;
+        margin-bottom:20px;
+    }
+
+    .profile-photo img{
+        width:220px;
+        height:220px;
     }
 
     header h1{
         font-size:2.2rem;
     }
+
 }
 </style>
 </head>
@@ -195,14 +200,17 @@ footer{
 <div class="container">
 
 <section id="about">
+
     <h2>About Me</h2>
 
     <div class="hero-grid">
-        <div class="profile-placeholder">
-            Your Photo
+
+        <div class="profile-photo">
+            <img src="Smith Maverick.jpg" alt="Dr. Maverick E. Smith">
         </div>
 
         <div>
+
             <p>
                 I am an Assistant Professor of Psychology and director of the
                 Memory, Aging, and Vision (MAV) Lab. My research investigates
@@ -216,59 +224,61 @@ footer{
                 and computational approaches to better understand how memory
                 functions in everyday life.
             </p>
+
         </div>
+
     </div>
+
 </section>
 
 <section id="research">
+
     <h2>Research Interests</h2>
 
     <div class="card-grid">
+
         <div class="card">
             <h3>Event Memory</h3>
-            <p>
-                Understanding how people encode and remember naturalistic events.
-            </p>
+            <p>Understanding how people encode and remember naturalistic events.</p>
         </div>
 
         <div class="card">
             <h3>Event Segmentation</h3>
-            <p>
-                Investigating how individuals identify meaningful event boundaries.
-            </p>
+            <p>Investigating how individuals identify meaningful event boundaries.</p>
         </div>
 
         <div class="card">
             <h3>Cognitive Aging</h3>
-            <p>
-                Examining age-related changes in perception, attention, and memory.
-            </p>
+            <p>Examining age-related changes in perception, attention, and memory.</p>
         </div>
 
         <div class="card">
             <h3>Vision & Attention</h3>
-            <p>
-                Studying how visual information guides memory formation.
-            </p>
+            <p>Studying how visual information guides memory formation.</p>
         </div>
+
     </div>
+
 </section>
 
 <section id="lab">
+
     <h2>Memory, Aging, and Vision (MAV) Lab</h2>
 
     <p>
-        The MAV Lab explores how people understand and remember everyday experiences.
-        We are particularly interested in event perception, aging, visual cognition,
-        and memory interventions.
+        The MAV Lab explores how people understand and remember everyday
+        experiences. We are particularly interested in event perception,
+        aging, visual cognition, and memory interventions.
     </p>
 
     <p style="margin-top:15px;">
         Interested students are encouraged to contact me about research opportunities.
     </p>
+
 </section>
 
 <section id="publications">
+
     <h2>Selected Publications</h2>
 
     <div class="publication">
@@ -287,9 +297,11 @@ footer{
     </div>
 
     <p>Add your publications here.</p>
+
 </section>
 
 <section id="teaching">
+
     <h2>Teaching</h2>
 
     <ul>
@@ -298,9 +310,11 @@ footer{
         <li>Research Methods</li>
         <li>Statistics</li>
     </ul>
+
 </section>
 
 <section id="contact">
+
     <h2>Contact</h2>
 
     <p>
@@ -313,15 +327,16 @@ footer{
         Email: msmith@truman.edu
     </p>
 
-    <a class="button" href="msmith@truman.edu">
+    <a class="button" href="mailto:msmith@truman.edu">
         Email Me
     </a>
+
 </section>
 
 </div>
 
 <footer>
-    <p>&copy; 2026 Maverick E. Smith | Memory, Aging, and Vision [MAV] Lab</p>
+    <p>&copy; 2026 Maverick E. Smith | Memory, Aging, and Vision (MAV) Lab</p>
 </footer>
 
 </body>
